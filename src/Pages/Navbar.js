@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className=''>
             
 <nav className="bg-white  sm:px-4 py-2.5  dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-  <div className="container px-20  flex flex-wrap justify-between items-center mx-auto">
+  <div className="container md:px-20 px-2  flex flex-wrap justify-between items-center mx-auto">
   <p className='text-xl'><span className='text-2xl font-serif font-semibold'>T</span>ask</p>
   <div className="flex md:order-2 ">
 Login<button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-sticky" aria-expanded="false">

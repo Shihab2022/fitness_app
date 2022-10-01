@@ -42,18 +42,16 @@ const Slider = () => {
         setSecond(!second)
         setThird(!third)
     }
-    console.log('first',first)
-    console.log("2",second)
-    console.log('3',third)
+
     return (
-        <div className=' px-24 py-5  mt-20'>
+        <div className=' md:px-24 px-5 py-5 mt-8  md:mt-20'>
       
          <div>
-            <h1 className='text-5xl  py-5'>Runner's workout</h1>
+            <h1 className='md:text-5xl text-2xl py-5'>Runner's workout</h1>
             <div className='grid grid-cols-12 '>
 
                 <div className={`relative   ${!first ? 'col-start-1 col-end-4' : 'col-start-1 col-end-6' } `}>
-                <img onMouseEnter={()=>firstMouseIn("cols-5 clos-8")} onMouseOut={()=>firstMouseOut()} className='h-[450px] transition duration-700 rounded-l-xl' src={img1} alt="" />
+                <img onMouseEnter={()=>firstMouseIn("cols-5 clos-8")} onMouseOut={()=>firstMouseOut()} className='md:h-[450px] h-[250px] rounded-l-xl' src={img1} alt="" />
                 <div className='absolute top-5 grid grid-cols-12 justify-end items-center left-5'>
                     <h2 className='col-start-2 col-end-5 text-xl font-bold  text-zinc-700'>STRENGTH</h2>
                     {
@@ -63,7 +61,7 @@ const Slider = () => {
                 </div>
 
                 <div className={`relative duration-700  ${   second ? value : 'col-start-6 col-end-10' } `}>
-                <img onMouseEnter={()=>secondMouseIn()} onMouseOut={()=>secondMouseOut()} className='h-[450px]' src={img2} alt="" />
+                <img onMouseEnter={()=>secondMouseIn()} onMouseOut={()=>secondMouseOut()} className='md:h-[450px] h-[250px]'  src={img2} alt="" />
                 
                 <div className='absolute top-5 grid grid-cols-12 justify-end items-center left-5'>
                     <h2 className='col-start-2 col-end-5 text-xl font-bold  text-zinc-700'>MOBILITY</h2>
@@ -74,12 +72,12 @@ const Slider = () => {
                 </div>
 
                 <div className={`relative duration-700 ${third ? 'col-start-8  col-end-13' : 'col-start-10 col-end-13' } `}>
-                <img onMouseEnter={()=>thirdMouseIn()} onMouseOut={()=>thirdMouseOut()} className='h-[450px] rounded-r-xl' src={img3} alt="" />
+                <img onMouseEnter={()=>thirdMouseIn()} onMouseOut={()=>thirdMouseOut()} className='md:h-[450px] h-[250px] rounded-r-xl' src={img3} alt="" />
                 
                 <div className='absolute top-5 grid grid-cols-12 justify-end items-center left-5'>
                     <h2 className='col-start-2 col-end-5 text-xl font-bold  text-white'>DRILLS</h2>
                     {
-                        third &&<h5 className='col-start-12 col-end-13 text-2xl   font-bold text-center ml-6 text-white rounded-full'>  > </h5>
+                        !third &&<h5 className='col-start-12 col-end-13 text-2xl   font-bold text-center ml-6 text-red-800 rounded-full'>  > </h5>
                     }
                 </div>
                 </div>
