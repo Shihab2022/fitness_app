@@ -3,10 +3,11 @@ import Navbar from './Pages/Navbar';
 import Slider from './Pages/Slider';
 
 function App() {
+
   return (
     <div >
       <Navbar/>
-      <Slider/>
+      <Slider/>  
     </div>
   );
 }
