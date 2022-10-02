@@ -35,7 +35,6 @@ const Slider = () => {
          <div> 
             <h1   className='md:text-5xl text-2xl py-5'>Runner's workout</h1>
             <div className='flex'>
-
                 <div   className={`relative`}>
                 <img  onMouseEnter={()=>firstMouseIn()} onMouseOut={()=>mouseOut()} className='md:h-[450px] w-[550px] hover:w-[800px] duration-1000 delay-150 h-[250px] rounded-l-xl ' src={img1} alt="" />
                 <div className='absolute top-5 grid grid-cols-12 justify-end items-center left-5'>
